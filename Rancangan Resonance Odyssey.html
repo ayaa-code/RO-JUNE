@@ -14,9 +14,10 @@
         }
 
         :root {
-            --wood: #FFB6D9;
+            --wood: rgba(195, 213, 245, 0.55);
             --paper: #F0F8FF;
-            --gold: #FFCB99;
+            --gold: rgba(198, 217, 245, 0.7);
+            --border-soft: rgba(134, 165, 214, 0.24);
         }
 
         body {
@@ -53,7 +54,7 @@
 
         .content-card {
             background: var(--paper);
-            border: clamp(5px, 1.5vw, 8px) solid var(--wood);
+            border: 1px solid var(--border-soft);
             border-radius: clamp(12px, 3vw, 20px);
             padding: clamp(15px, 4vw, 40px);
             max-width: clamp(280px, 90vw, 600px);
@@ -74,7 +75,7 @@
             font-weight: 900;
             text-transform: uppercase;
             letter-spacing: clamp(1px, 0.5vw, 2px);
-            border: 2px solid #7EC8E3;
+            border: 1px solid var(--border-soft);
             cursor: pointer;
             transition: all 0.2s;
             box-shadow: 0 clamp(3px, 1vw, 5px) 0 #5EB3D6;
@@ -96,7 +97,7 @@
         #input-player-name {
             width: 100%;
             padding: clamp(10px, 2vw, 12px) clamp(12px, 3vw, 15px);
-            border: clamp(2px, 0.5vw, 4px) solid #7EC8E3;
+            border: 1px solid var(--border-soft);
             border-radius: 8px;
             font-size: clamp(14px, 3vw, 16px);
             font-weight: bold;
@@ -151,7 +152,7 @@
 
         .status-bar {
             background: var(--paper);
-            border-bottom: 5px solid var(--wood);
+            border-bottom: 1px solid var(--border-soft);
             padding: clamp(8px, 2vw, 12px) clamp(10px, 3vw, 30px);
             display: flex;
             justify-content: space-between;
@@ -179,7 +180,7 @@
             background: linear-gradient(135deg, #7EC8E3 0%, #A8D8EA 100%);
             padding: clamp(4px, 1.5vw, 8px) clamp(6px, 2vw, 12px);
             border-radius: 8px;
-            border: 1px solid #5EB3D6;
+            border: 1px solid var(--border-soft);
         }
 
         #status-avatar {
@@ -267,13 +268,13 @@
             height: min(85vh, 95vw);
             aspect-ratio: 1 / 1;
             position: relative;
-            border: clamp(4px, 1vw, 6px) solid var(--gold);
+            border: 1px solid var(--border-soft);
             box-shadow: inset 0 0 20px rgba(0,0,0,0.3), 0 10px 30px rgba(0,0,0,0.5);
         }
 
         .tile {
             background: linear-gradient(135deg, #FFFFFF 0%, #F0F8FF 100%);
-            border: clamp(2px, 0.5vw, 3px) solid #B8D4E8;
+            border: 1px solid var(--border-soft);
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -324,7 +325,7 @@
         .side-left .tile-header { background: linear-gradient(135deg, #FFCB99 0%, #FFD5B0 100%); }
         .corner-tile { 
             background: linear-gradient(135deg, #FFFFFF 0%, #F0F8FF 100%);
-            border: 3px solid #B8D4E8;
+            border: 1px solid var(--border-soft);
             box-shadow: inset 0 1px 0 rgba(255,255,255,0.5), 0 2px 5px rgba(0,0,0,0.2);
             border-radius: 4px;
         }
@@ -376,7 +377,7 @@
 
         .btn-dir {
             background: linear-gradient(135deg, #7EC8E3 0%, #A8D8EA 100%);
-            border: clamp(2px, 0.5vw, 3px) solid #5EB3D6;
+            border: 1px solid var(--border-soft);
             color: white;
             width: clamp(55px, 12vw, 65px);
             height: clamp(55px, 12vw, 65px);
@@ -984,7 +985,29 @@
                 font-size: clamp(11px, 2.8vw, 15px);
             }
         }
-    </style>
+            .content-card,
+        .btn-gold,
+        .btn-dir,
+        .monopoly-board,
+        .tile,
+        .corner-tile,
+        .status-bar,
+        .avatar-badge,
+        .location-info,
+        .status-card,
+        .panel,
+        .card,
+        .box,
+        .dialog,
+        .popup,
+        .overlay {
+            border: 1px solid var(--border-soft) !important;
+        }
+
+        .tile-header {
+            border-bottom: 1px solid rgba(134, 165, 214, 0.18) !important;
+        }
+</style>
 </head>
 <body>
 

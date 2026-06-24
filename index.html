@@ -27,9 +27,10 @@
             --accent-blue: #BFDFF9; /* softer accent for highlights */
             --mid-blue: #B0D7FB;    /* gentle mid tone */
             --deep-blue: #102A43;   /* darker navy for headings */
-            --border-blue: #3F7DD8; /* medium blue for subtle borders */
-            --border-strong: #1E3A5F; /* strong navy for consistent borders */
-            --border-width: clamp(3px, 0.8vw, 4px);
+            --border-blue: rgba(116, 149, 200, 0.38);
+            --border-strong: rgba(116, 149, 200, 0.24);
+            --border-soft: rgba(134, 165, 214, 0.24);
+            --border-width: 1px;
             --card-bg-tint: #F7FBFF; /* slight blue-white tint for cards */
             --card-shadow: rgba(93,140,210,0.12);
             --dark-text: #102A43;   /* navy for readable text */
@@ -114,7 +115,7 @@
                 justify-content: flex-start;
                 align-items: stretch;
                 background: linear-gradient(180deg, var(--soft-cloud-blue) 0%, var(--soft-white) 55%);
-                border-left: 4px solid var(--border-blue);
+                border-left: 1px solid var(--border-soft);
                 border-bottom: none;
                 padding: 14px 14px;
                 gap: 12px;
@@ -154,7 +155,7 @@
                 justify-content: flex-start;
                 align-items: stretch;
                 background: linear-gradient(180deg, var(--soft-cloud-blue) 0%, var(--soft-white) 55%);
-                border-left: 4px solid var(--border-blue);
+                border-left: 1px solid var(--border-soft);
                 padding: 16px 14px;
                 gap: 12px;
                 overflow-y: visible;
@@ -376,7 +377,7 @@
                 height: auto !important;
                 position: relative !important;
                 border-right: none !important;
-                border-bottom: 4px solid var(--border-strong);
+                border-bottom: 1px solid var(--border-soft);
                 padding: 16px;
                 gap: 12px;
                 background: linear-gradient(180deg, var(--soft-cloud-blue), var(--soft-white)) !important;
@@ -397,7 +398,7 @@
                 padding: 16px;
                 background: linear-gradient(180deg, var(--soft-cloud-blue), var(--soft-white));
                 border-left: none;
-                border-top: 4px solid var(--border-strong);
+                border-top: 1px solid var(--border-soft);
                 order: 3;
             }
 
@@ -476,7 +477,7 @@
 
         .content-card {
             background: var(--soft-white);
-            border: clamp(5px, 1.5vw, 8px) solid var(--border-blue);
+            border: 1px solid var(--border-soft);
             border-radius: clamp(12px, 3vw, 20px);
             padding: clamp(16px, 2vw, 20px);
             max-width: min(95vw, 760px);
@@ -528,7 +529,7 @@
             font-weight: 900;
             text-transform: uppercase;
             letter-spacing: clamp(1px, 0.5vw, 2px);
-            border: clamp(1px, 0.3vw, 3px) solid var(--border-blue);
+            border: 1px solid var(--border-soft);
             cursor: pointer;
             transition: all 0.2s;
             box-shadow: 0 clamp(3px, 1vw, 5px) 0 rgba(93,140,210,0.08);
@@ -550,7 +551,7 @@
         #input-player-name {
             width: 100%;
             padding: clamp(12px, 2.5vw, 18px) clamp(15px, 3vw, 25px);
-            border: clamp(2px, 0.5vw, 4px) solid var(--border-blue);
+            border: 1px solid var(--border-soft);
             border-radius: 8px;
             font-size: clamp(14px, 2vw, 20px);
             font-weight: bold;
@@ -571,7 +572,7 @@
         #input-school-name {
             width: 100%;
             padding: clamp(12px, 2.5vw, 18px) clamp(15px, 3vw, 25px);
-            border: clamp(2px, 0.5vw, 4px) solid var(--border-blue);
+            border: 1px solid var(--border-soft);
             border-radius: 8px;
             font-size: clamp(14px, 2vw, 20px);
             font-weight: bold;
@@ -640,7 +641,7 @@
 
         .status-bar {
             background: var(--soft-white);
-            border-bottom: 5px solid var(--border-blue);
+            border-bottom: 1px solid var(--border-soft);
             padding: clamp(14px, 2vw, 18px) clamp(10px, 3vw, 30px);
             display: flex;
             flex-direction: column;
@@ -3388,7 +3389,7 @@
         <div class="content-card">
             <h2 id="region-title" style="font-size: clamp(32px, 8vw, 48px); margin-bottom: clamp(20px, 4vw, 30px);">📍 WILAYAH BARU</h2>
             <img id="region-image" src="" alt="Region" class="preview-image" style="max-height: clamp(200px, 40vh, 400px); margin-bottom: clamp(20px, 3vw, 30px); border-radius: 12px; transition: all 0.5s ease;">
-            <div id="region-info-box" style="background: rgba(87, 130, 216, 0.12); border: 2px solid var(--border-strong); border-radius: 16px; padding: clamp(16px, 3vw, 24px); margin-bottom: clamp(20px, 3vw, 30px);">
+            <div id="region-info-box" style="background: rgba(87, 130, 216, 0.12); border: 1px solid rgba(134, 165, 214, 0.24); border-radius: 16px; padding: clamp(16px, 3vw, 24px); margin-bottom: clamp(20px, 3vw, 30px);">
                 <p id="region-name" style="font-size: clamp(20px, 4vw, 28px); font-weight: 900; color: var(--dark-outline); margin: 0; margin-bottom: 10px;"></p>
                 <p id="region-description" style="font-size: clamp(13px, 2.5vw, 16px); color: var(--dark-outline); margin: 0; line-height: 1.5;"></p>
             </div>
