@@ -2131,17 +2131,6 @@
         }
 
         /* Character Grid */
-        .char-selection-board {
-            width: min(100%, 1320px);
-            padding: clamp(18px, 2.6vw, 28px);
-            border: 2px solid rgba(18, 45, 86, 0.72);
-            border-radius: 28px;
-            background: linear-gradient(135deg, rgba(255, 255, 255, 0.86), rgba(236, 245, 255, 0.92));
-            box-shadow: 0 18px 46px rgba(15, 42, 69, 0.16), inset 0 1px 0 rgba(255, 255, 255, 0.8);
-            backdrop-filter: blur(8px);
-            -webkit-backdrop-filter: blur(8px);
-        }
-
         .char-grid {
             display: flex;
             flex-wrap: nowrap;
@@ -3332,7 +3321,7 @@
 
     <!-- SCREEN 3: Pilih Karakter -->
     <div id="screen-char" class="screen-overlay hidden">
-        <div class="char-selection-board" style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; width: 100%; max-width: 1500px; margin: 0 auto; padding: clamp(18px, 2.6vw, 28px) clamp(14px, 2vw, 28px);">
+        <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; width: 100%; max-width: 1500px; margin: 0 auto; padding: 0 clamp(14px, 2vw, 28px);">
             <h1 class="screen-char-title">PILIH AVATARMU</h1>
             <div class="char-grid" id="selection-grid"></div>
         </div>
