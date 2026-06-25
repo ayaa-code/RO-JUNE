@@ -1,0 +1,25 @@
+{
+  "name": "ro-june",
+  "version": "1.0.0",
+  "description": "Sistem ini dibuat untuk mengumpulkan data hasil bermain siswa dari berbagai sekolah dalam penelitian edukasi musik Nusantara.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ayaa-code/RO-JUNE.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ayaa-code/RO-JUNE/issues"
+  },
+  "homepage": "https://github.com/ayaa-code/RO-JUNE#readme",
+  "dependencies": {
+    "jsdom": "^29.1.1",
+    "playwright": "^1.61.1"
+  }
+}
