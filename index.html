@@ -4832,10 +4832,11 @@
             }
         });
 
-        initBoard();
-    </script>
-</body>
-</html>
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initBoard);
+        } else {
+            initBoard();
+        }
     </script>
 </body>
 </html>
