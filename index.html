@@ -3292,7 +3292,7 @@
 <body>
 
     <!-- SCREEN 1: Home Menu dengan 2 Kartu -->
-    <div id="screen-name" class="screen-overlay">
+    <div id="screen-name" class="screen-overlay hidden">
         <div class="content-card">
             <h1>RESONANCE ODYSSEY</h1>
             <p>Selamat Datang, Penjelajah!</p>
@@ -3387,6 +3387,7 @@
     <!-- GAME BOARD -->
     <main class="game-main">
         <div class="game-board-wrapper">
+            <button class="btn-gold" onclick="startGameFlow()" style="max-width: 280px; margin: 0 auto;">MULAI PETUALANGAN</button>
             <div id="board" class="monopoly-board">
                 <div class="center-area">
                     <img src="https://raw.githubusercontent.com/riyanarahman320/26/main/BANDUNG.png" alt="Resonance Odyssey" class="center-image">
@@ -3482,7 +3483,7 @@
     </div>
 
     <!-- QUIZ CARDS OVERLAY -->
-    <div id="quiz-cards-overlay" class="screen-overlay">
+    <div id="quiz-cards-overlay" class="screen-overlay hidden">
         <div class="content-card">
             <div class="quiz-header">Kartu Angklung</div>
             <div class="cards-container">
@@ -3514,7 +3515,7 @@
     </div>
 
     <!-- QUIZ OVERLAY -->
-    <div id="quiz-overlay" class="screen-overlay">
+    <div id="quiz-overlay" class="screen-overlay hidden">
         <div class="content-card">
             <div class="quiz-header" id="quiz-header"></div>
             <div class="quiz-question" id="quiz-question"></div>
@@ -3529,7 +3530,7 @@
     </div>
 
     <!-- END GAME OVERLAY -->
-    <div id="end-overlay" class="screen-overlay">
+    <div id="end-overlay" class="screen-overlay hidden">
         <div class="content-card">
             <div id="end-title"></div>
             <div id="end-message"></div>
